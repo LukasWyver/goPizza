@@ -1,8 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
+import theme from '@src/global/styles/theme';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts, DMSans_400Regular } from '@expo-google-fonts/dm-sans';
 import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display';
+import { ThemeProvider } from 'styled-components/native';
+
 
 export default function App() {
   SplashScreen.preventAutoHideAsync();
@@ -19,7 +22,8 @@ export default function App() {
   SplashScreen.hideAsync();
 
   return (
-    <View>
-    </View>
+    <ThemeProvider theme={theme}>
+      <View />
+    </ThemeProvider>
   );
 }
