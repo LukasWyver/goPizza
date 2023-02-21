@@ -40,7 +40,7 @@ export const Brand = styled.Image.attrs({
 `;
 
 export const ForgotPasswordButton = styled(TouchableOpacity).attrs({
-  activityOpacity: 0.7,
+  activeOpacity: 0.7,
 })`
   align-self: flex-end;
   margin-bottom: ${RFValue(20)}px;
